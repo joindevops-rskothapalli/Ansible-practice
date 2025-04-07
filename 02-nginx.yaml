@@ -1,5 +1,5 @@
 name: download, install, start and enable nginx
-hosts: localhost
+hosts: web
 become: yes
 tasks:
   - name: download and install nginx

@@ -1,0 +1,16 @@
+---
+- name: understanding task level variables
+  hosts: web
+  vars:
+    course: "terraform"
+    trainer: "shiva kumar"
+    duration: "6 weeks"
+  tasks:
+    - name: print override values
+      vars:
+        course: "devops"
+      ansible.builtin.debug:
+        msg: "hi we are learning {{course}}, from {{trainer}}, for {{duration}}."
+    - name: print heriditory vars
+      ansible.builtin.debug:
+        msg: "hi, I am learning {{course}} from {{trainer}}, for {{duration}}."

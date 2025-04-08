@@ -1,4 +1,4 @@
-name: download, install, start and enable nginx
+name: download install start and enable nginx
 hosts: web
 become: yes
 tasks:

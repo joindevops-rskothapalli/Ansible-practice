@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: download and install nginx
-    ansible.builtin.pacakage:
+    ansible.builtin.dnf:
       name: nginx
       state: latest
   - name: start and enable nginx

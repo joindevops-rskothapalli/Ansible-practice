@@ -4,5 +4,5 @@
     - vars.yaml
   tasks:
     name: print vars from vars_files
-    ansible.builting.debug:
+    ansible.builtin.debug:
       msg: "Hi, we are learning {{course}} from {{trainer}}, duration: {{duration}}."

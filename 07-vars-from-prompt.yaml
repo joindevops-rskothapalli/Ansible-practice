@@ -6,7 +6,7 @@
       private: false
     - name: password
       prompt: please tner password
-      privae: true
+      private: true
   tasks:
     - name: printe vars from prompt
       ansible.builtin.debug:

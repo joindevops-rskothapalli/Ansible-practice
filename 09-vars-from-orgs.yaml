@@ -4,3 +4,4 @@
     - name: variables from orguments
       ansible.builtin.debug:
         msg: "hi {{person}} good {{wishes}}"
+#Need to pass orgs when we run playbook.

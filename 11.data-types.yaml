@@ -1,0 +1,16 @@
+- name: date types learning
+  hosts: web
+  vars:
+    course: devops with aws # string
+    tools: # list
+      - linux
+      - aws
+      - devops
+    experience: # map
+      devops: 3 #integer
+      aws: 2.5 #float
+    real project: true # bool
+  tasks:
+    - name: print vars
+      ansible.builtin.debug:
+        msg: "Hi, Course is {{course}}, tools are: {{tools}}, experience is: {{experience}}, real project: {{real project}}"

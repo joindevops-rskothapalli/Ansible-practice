@@ -1,0 +1,12 @@
+- name: install packages using loops
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: insgall packages using loops
+      ansible.builtin.dnf:
+        name: "{ { item } }""
+        state: latest
+      loop: 
+      - mysql
+      - sql
+      - postfix

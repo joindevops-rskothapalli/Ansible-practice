@@ -9,7 +9,7 @@
     experience: # map
       devops: 3 #integer
       aws: 2.5 #float
-    real project: true # bool
+    realproject: true # bool
   tasks:
     - name: print vars
       ansible.builtin.debug:

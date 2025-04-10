@@ -4,8 +4,8 @@
   tasks:
     - name: install and uninsall using loops
       ansible.builtin.dnf:
-        name: { { item.name } }
-        state: { { item.state } }
+        name: "{ { item.name } }"
+        state: "{ { item.state } }"
       loop:
         - { name: "mysql", state: "absent" }
         - { name: "nginx", state: "latest" }

@@ -1,7 +1,7 @@
 - name: number comparison
   hosts: localhost
   vars_prompt:
-    - name: name
+    - name: number
       prompt: please enter number
       private: no
   tasks:

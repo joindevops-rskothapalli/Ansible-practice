@@ -5,11 +5,11 @@
       prompt: please enter number
       private: no
   tasks:
-    - name: The number is greater than 10
+    - name: mumber is greater than 10
       ansible.builtin.debug:
         msg: "the given {{number}} is less than 10"
-      when: number | < 10
+      when: number | int < 10
     - name: The number is greate than or equal to 10
       ansible.builtin.debug:
         msg: "the given {{number}} is greater than or equalt to 10"
-      when: number | >=10
+      when: number | int >=10

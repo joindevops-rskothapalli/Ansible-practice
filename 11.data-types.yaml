@@ -13,4 +13,4 @@
   tasks:
     - name: print vars
       ansible.builtin.debug:
-        msg: "Hi, Course is {{course}}, tools are: {{tools}}, experience is: {{realproject}}, real project: {{real project}}"
+        msg: "Hi, Course is {{course}}, tools are: {{tools}}, experience is: {{experience}}, real experience: {{realproject}}"

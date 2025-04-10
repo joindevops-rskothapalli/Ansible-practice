@@ -54,4 +54,4 @@
         msg: "before converstion {{my_dict}}"
     - name: after conversion
       ansible.builtin.debug: 
-        msg: "after conversion {{my_dict | dict2items}}
+        msg: "after conversion {{my_dict | dict2items}}"

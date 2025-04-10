@@ -1,0 +1,20 @@
+- name: learning first condition
+  hosts: web
+  become: yes
+  tasks:
+    - name: checking user availability
+      ansible.builtin.command: id expense
+      register: USER
+      ignore_errors: true
+
+    - name: print user info
+      ansible.builtin.debug:
+        msg: "Hello, hefre is the user information: {{USER}}"
+
+    - name: creating user
+      ansible.builtin.command: useradd expense
+      when USER.rc !=0
+
+    - name: hello statement
+      ansible.builtin.debug: 
+        msg: "Hello"

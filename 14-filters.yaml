@@ -62,7 +62,7 @@
     - {'key': 'course', 'value': 'Devops'}
     - {'key': 'trainer', 'value': 'siva kumar'}
     - {'key': 'duration', 'value': '150hrs'}
-  task: 
+  tasks: 
   - name: before convert
     ansible.builtin.debug:
       msg: "before convert {{my_list}}"

@@ -1,0 +1,6 @@
+- name: different types of filters
+  hosts: localhost
+  tasks:
+    - name: print default values
+      ansible.builtin.debug:
+        msg: "{{course | default ('ansible')}}"

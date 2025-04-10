@@ -30,7 +30,7 @@
   tasks:
   - name: print unique numbers
     ansible.builtin.debug:
-      msg: "numbers | unique"
+      msg: "{{numbers | unique}}"
 
 - name: print min and max ages
   hosts: localhost

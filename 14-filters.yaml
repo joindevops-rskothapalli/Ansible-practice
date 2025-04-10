@@ -18,6 +18,7 @@
   hosts: localhost
   vars:
     greeting: "HELLO, GOOD MORNING"
+  tasks: 
     ansible.builtin.debug:
       msg: "{{greeting | lower}}"
   
